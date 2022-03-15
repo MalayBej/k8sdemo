@@ -21,5 +21,3 @@ jobs:
       run: dotnet restore ./DemoPublisherAPI/
     - name: Build
       run: dotnet build ./DemoPublisherAPI/ --no-restore
-    - name: Test
-      run: dotnet test ./DemoPublisherAPI/DemoPublisherAPI.Test/ --no-build --verbosity normal
