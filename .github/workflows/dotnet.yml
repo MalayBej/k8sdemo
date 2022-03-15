@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore ./DemoPublisherAPI
+      run: dotnet restore DemoPublisherAPI/
     - name: Build
-      run: dotnet build ./DemoPublisherAPI --no-restore
+      run: dotnet build DemoPublisherAPI/ --no-restore
     - name: Test
-      run: dotnet test ./DemoPublisherAPI --no-build --verbosity normal
+      run: dotnet test DemoPublisherAPI/ --no-build --verbosity normal
